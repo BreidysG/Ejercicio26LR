@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampliación Ocular - Triángulo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AMPLIACIÓN OCULAR - RELOJ DE ARENA</h1>
+        <p id="p1" class="instruction">Este ejercicio está formado por un texto en forma de reloj de arena atravesado por una línea vertical. Debes centrar la mirada en la línea del medio y deslizarla por donde la placa visualizadora te lo indica. Lo ideal es que disminuyas el número de fijaciones que realiza el ojo al leer y puedas percibir por cada línea de texto, y con un solo golpe de vista, tres o más palabras.</p>
+        <p id="p2" class="instruction">Este ejercicio te servirá para ampliar tu ángulo lector y así captar más palabras con una sola fijación.</p>
+        <p id="p3" class="instruction">No olvides que las palabras las debes percibir y no expresar su sonido ni física ni mentalmente.</p>
+        <div id="settings">
+            <label for="speedInput">Selecciona la velocidad (ms):</label>
+            <input type="number" id="speedInput" value="1000" min="100" step="100"> <!-- Valor por defecto de 1000ms -->
+        </div>
+        <div id="containerInputButton" class="container-input-button">
+            <button id="startButton">Iniciar</button>
+        </div>
+        <div id="timer"></div>
+        
+        <div id="triangleContainer" class="triangle-container hidden">
+            <div class="triangle">
+                <div class="center-line"></div>
+                <div id="textSlot">
+                    <div class="line">Temeroso era un hermoso patito blanco que le tenía miedo a muchas cosas. Vivía con sus papis y</div>
+                    <div class="line">siete hermanitos, todos casi iguales a él. Lo que diferenciaba a Temeroso de sus</div>
+                    <div class="line">hermanos, no era ningún rasgo físico, sino que , nuestro patito amigo era</div>
+                    <div class="line">muy, pero muy miedoso. Algunos de sus tantos hermanitos lo</div>
+                    <div class="line">entendían y trataban de ayudarlo, otros se burlaban y</div>
+                    <div class="line">decían que por algo lo llamaban así. Temeroso era un hermoso</div>
+                    <div class="line">patito blanco que le tenía miedo a muchas cosas. Vivía con sus papis y siete</div>
+                    <div class="line">hermanitos, todos casi iguales a él. Lo que diferenciaba a Temeroso de sus hermanos, no</div>
+                    <div class="line">era ningún rasgo físico, sono que, nuestro patito amigo era muy, pero muy miedoso. Algunos de sus</div>
+                </div>
+                <div class="blue-highlight"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
